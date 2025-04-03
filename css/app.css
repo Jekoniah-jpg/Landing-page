@@ -66,67 +66,98 @@ header.navbar-container .nav-list li a:hover {
     height: 50px;
 }
 
-.content-image img{
-    width: 30%;
-    height: 30%;
+main {
+  flex: 1;
+  border-color: #425c77;
+
+  font-family: quicksand;
+
+  width: 100%;
+  max-width: 1200;
+  margin-inline: auto;
+  padding: 4rem 4rem;
+  margin: 35px 25px ;
+  
+  
 }
 
-main {
-    flex: 1;
-    width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding: 2rem 4rem;
+.konten{
     display: flex;
-    align-items: center;
-  }
+    justify-content: space-between;
+}
 
-  main .content {
-    flex: 1;
+.judul-isi{
     display: flex;
-    align-items: center;
-  }
-  main .content .content-description {
-    flex: 1 1;
-  }
-  main .content .content-description .title {
+    flex-direction: column;
+    width: 50%;
+}
+
+
+div.konten .content-image img{
+    width: 350px;
+    min-width: 250px;
+    margin: 25px 145px 60px;
+}
+
+
+div.judul-isi .konten .title{
     margin-block: 1rem;
     font-size: 3.5rem;
-  }
-  main .content .content-description p {
+}
+
+div.judul-isi .konten p{
     font-size: 1.2rem;
-    line-height: 1.7rem;
-  }
-  main .content .content-description button {
-    padding: 0.8rem 2.5rem;
+  line-height: 1.7rem;
+}
+
+main .judul-isi button {
+    width: 40%;
+    height: 13%;
+    padding: 1rem 2rem;
     border: 3px solid transparent;
-    border-radius: 999px;
-    margin-block-start: 1rem;
+    border-radius: 100px;
+    margin-block-start: 2rem;
     background-color: #2d3e50;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: auto;
     font-weight: 700;
     color: white;
     cursor: pointer;
     transition: all 0.15s ease-in;
-  }
-  main .content .content-description button:hover {
+}
+  main .konten .judul-isi button:hover {
     border: 3px solid #2d3e50;
     background-color: transparent;
     color: #2d3e50;
-  }
-  main .content .content-image {
-    flex: 1;
-    display: flex;
-  }
-  main .content .content-image img {
-    width: 300px;
-    min-width: 250px;
-    margin: auto;
-  }
+}
 
-  aside{
+main aside {
     position: fixed;
     inset-block: 0;
+    inset-inline-end: 0;
   }
+
+  main aside .social-media {
+    height: 100%;
+    
+}
+  main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-top: 245px;
+    background-color: #2d3e50;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+        
+    list-style-type: none;
+}
+
+main aside .social-media li{
+    color : white;
+    transition: all 0.1s ease-in-out;
+}
